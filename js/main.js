@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="confetti"></div>
                 <div class="message">
                     <p class="success-text">Yay! 💖</p>
-                    <p class="love-message">Thank you for making me the happiest person!</p>
+                    <p class="love-message">Thank you for making me the happiest person on earth Akshuma ! I love you so much Patu 💕</p>
                 </div>
                 <div class="floating-hearts"></div>
             </div>

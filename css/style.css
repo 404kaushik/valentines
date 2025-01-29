@@ -25,6 +25,7 @@ body {
     width: 100%;
     max-width: 1200px;
     padding: 2rem;
+    min-height: 100vh;
 }
 
 .header {
@@ -184,34 +185,39 @@ body {
     color: var(--primary-color);
     pointer-events: none;
     z-index: 1000;
-    white-space: nowrap;
+    white-space: normal; /* Changed from nowrap to normal */
+    max-width: 80vw; /* Added max-width */
+    word-wrap: break-word; /* Added word wrap */
     animation: popMessage 2.5s ease-out forwards;
     backdrop-filter: blur(5px);
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure centered */
 }
 
 @keyframes popMessage {
     0% {
-        transform: scale(0) translateY(0);
+        transform: translateX(-50%) scale(0) translateY(0);
         opacity: 0;
     }
     20% {
-        transform: scale(1.1) translateY(-20px);
+        transform: translateX(-50%) scale(1.1) translateY(-20px);
         opacity: 1;
     }
     80% {
-        transform: scale(1) translateY(-20px);
+        transform: translateX(-50%) scale(1) translateY(-20px);
         opacity: 1;
     }
     100% {
-        transform: scale(0.8) translateY(-30px);
+        transform: translateX(-50%) scale(0.8) translateY(-30px);
         opacity: 0;
     }
 }
 
 @media (max-width: 768px) {
     .excuse-message {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0.8rem 1.5rem;
+        max-width: 90vw; /* Slightly wider on mobile */
     }
 }
 
