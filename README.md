@@ -28,11 +28,7 @@ A charming and interactive Valentine's Day proposal website created with love! T
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-demo-link-here.com)
-
-## 📸 Preview
-
-![Valentine's Website Preview](path-to-your-screenshot.png)
+[View Live Demo](https://valentines-pi-five.vercel.app/))
 
 ## 🎯 How It Works
 
